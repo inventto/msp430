@@ -7,13 +7,13 @@ Environment configuration
 
 Installing dependencies:
 
-´´´sh
+```sh
 sudo apt-get install git-core gcc-4.4 texinfo patch libncurses5-dev zlibc zlib1g-dev libx11-dev libusb-dev libreadline6-dev 
 ```
 
 Installing compiler and mspdebug:
 
-´´´sh
+```sh
 sudo apt-get install gcc-msp430 binutils-msp430 msp430-libc mspdebug
 ```
 
@@ -24,13 +24,13 @@ Compiling and deploying
 
 Compiling you C code to MSP430:
 
-´´´sh
+```sh
 msp430-gcc -Os -mmcu=msp430g2553 -o output.elf input.c
 ```
 
 Running the code on MSP430:
 
-´´´sh
+```sh
 # Opening mspdebug
 sudo mspdebug rf2500
 # Deleting the code on the MSP
